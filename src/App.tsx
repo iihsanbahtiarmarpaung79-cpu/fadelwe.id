@@ -4,6 +4,7 @@ import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { Pricing } from "./components/Pricing";
+import { Services } from "./components/Services";
 import { Showcase } from "./components/Showcase";
 import { TechStack } from "./components/TechStack";
 import { TouchRipple } from "./components/TouchRipple";
@@ -17,6 +18,7 @@ export default function App() {
         <Hero />
         <TechStack />
         <About />
+        <Services />
         <Showcase />
         <Pricing />
         <Contact />
