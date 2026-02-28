@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Logo3D } from "./Logo3D";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,8 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-lg border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-3">
+            <Logo3D size={32} />
             <a href="#" className="text-2xl font-bold text-white tracking-tighter">
               Fadel<span className="text-blue-500">Web</span>.id
             </a>

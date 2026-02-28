@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight, Code, Cpu, Globe } from "lucide-react";
+import { Logo3D } from "./Logo3D";
 
 export function Hero() {
   return (
@@ -54,6 +55,11 @@ export function Hero() {
         </motion.div>
 
         <div className="relative hidden lg:block h-[500px]">
+          {/* Central 3D Logo */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40">
+             <Logo3D size={120} />
+          </div>
+
           {/* 3D Floating Elements */}
           <motion.div
             animate={{
