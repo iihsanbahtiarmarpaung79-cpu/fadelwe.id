@@ -30,7 +30,40 @@ export function About() {
                 <div className="relative">
                   <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1">
                     <div className="w-full h-full rounded-full bg-black flex items-center justify-center overflow-hidden">
-                      <User className="w-16 h-16 text-gray-300" />
+                      {/* 2D Cat Face SVG */}
+                      <svg
+                        viewBox="0 0 200 200"
+                        className="w-24 h-24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        {/* Head */}
+                        <circle cx="100" cy="110" r="60" fill="#E5E7EB" />
+                        
+                        {/* Ears */}
+                        <path d="M50 70 L40 30 L90 60 Z" fill="#E5E7EB" />
+                        <path d="M150 70 L160 30 L110 60 Z" fill="#E5E7EB" />
+                        <path d="M55 65 L48 40 L80 60 Z" fill="#FCA5A5" />
+                        <path d="M145 65 L152 40 L120 60 Z" fill="#FCA5A5" />
+
+                        {/* Eyes */}
+                        <ellipse cx="80" cy="100" rx="8" ry="12" fill="#1F2937" />
+                        <ellipse cx="120" cy="100" rx="8" ry="12" fill="#1F2937" />
+                        <circle cx="82" cy="96" r="3" fill="white" />
+                        <circle cx="122" cy="96" r="3" fill="white" />
+
+                        {/* Nose */}
+                        <path d="M95 115 L105 115 L100 122 Z" fill="#FCA5A5" />
+
+                        {/* Mouth */}
+                        <path d="M100 122 Q90 135 80 125" stroke="#1F2937" strokeWidth="3" fill="none" />
+                        <path d="M100 122 Q110 135 120 125" stroke="#1F2937" strokeWidth="3" fill="none" />
+
+                        {/* Whiskers */}
+                        <line x1="60" y1="110" x2="30" y2="105" stroke="#9CA3AF" strokeWidth="2" />
+                        <line x1="60" y1="118" x2="30" y2="120" stroke="#9CA3AF" strokeWidth="2" />
+                        <line x1="140" y1="110" x2="170" y2="105" stroke="#9CA3AF" strokeWidth="2" />
+                        <line x1="140" y1="118" x2="170" y2="120" stroke="#9CA3AF" strokeWidth="2" />
+                      </svg>
                     </div>
                   </div>
                   <div className="absolute bottom-0 right-0 w-8 h-8 bg-green-500 rounded-full border-4 border-black flex items-center justify-center">
